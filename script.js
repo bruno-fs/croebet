@@ -3,12 +3,12 @@ let balance = 1000;
 let betAmount = 10;
 let isSpinning = false;
 
-// Símbolos do jogo (trabalhista Krepinho themed)
+// Símbolos do jogo
 const symbols = [
-    '👔', // Gravata (Krepinho)
+    '👔', // Gravata
     '📊', // Gráfico
     '💼', // Maleta
-    '⚖️', // Balança (justiça trabalhista)
+    '⚖️', // Balança
     '📋', // Contrato
     '💰', // Dinheiro
     '🏛️', // Tribunal
@@ -129,7 +129,15 @@ async function spin() {
         // Animação de vitória
         reels.forEach(reel => reel.classList.add('win'));
 
-        resultMessage.textContent = `🎉 GANHOU! +R$ ${winAmount.toFixed(2)} 🎉`;
+        // Mensagens variadas de vitória (baseadas em piadas do chat)
+        const winMessages = [
+            `🎉 GANHOU! +R$ ${winAmount.toFixed(2)} 🎉`,
+            `💰 "Acabei de ganhar R$ ${winAmount.toFixed(2)} no Crobet!" - SuperChat`,
+            `🎊 O Krepinho te abençoou! +R$ ${winAmount.toFixed(2)}`,
+            `✨ Ganhou! "Crobet tá pagando forte" (só que não) 💸`,
+            `🏆 +R$ ${winAmount.toFixed(2)}! Nas bets reais isso NÃO acontece`,
+        ];
+        resultMessage.textContent = winMessages[Math.floor(Math.random() * winMessages.length)];
         resultMessage.className = 'result-message win';
 
         // Remover animação de vitória após um tempo
@@ -137,8 +145,18 @@ async function spin() {
             reels.forEach(reel => reel.classList.remove('win'));
         }, 1000);
     } else {
-        // Perdeu
-        resultMessage.textContent = `😢 Não foi dessa vez... O Krepinho não sorriu para você!`;
+        // Perdeu (com referências reais do chat)
+        const loseMessages = [
+            `😢 O Krepinho está triste... você também perdeu`,
+            `💸 "Meu salário é da Croebet, nunca ganho" - Vibes`,
+            `❌ Loss! (Pelo menos aqui não dói no bolso)`,
+            `😅 "Perdi o salário no tigre" - mas aqui é de mentira!`,
+            `🎲 A casa ganhou... ops, não tem casa aqui!`,
+            `📉 Bem-vindo à indústria do Loss™ (versão paródia)`,
+            `😔 Krepe triste, Tamir boca de sacola... todos perderam`,
+            `💼 Até o trabalhista perdeu essa rodada`,
+        ];
+        resultMessage.textContent = loseMessages[Math.floor(Math.random() * loseMessages.length)];
         resultMessage.className = 'result-message lose';
     }
 
@@ -237,13 +255,22 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// Easter eggs e mensagens aleatórias
+// Easter eggs e mensagens aleatórias (baseadas em piadas reais do chat)
 const easterEggMessages = [
-    'O Krepinho aprova esta jogada! 👔',
-    'Quase! O trabalhista quase apareceu!',
-    'A CLT não protege contra perdas no cassino! ⚖️',
-    'Tente novamente, a sorte está chegando!',
+    'Frederico Krepe aprova esta jogada! 👔',
+    '"Meu salário é da Croebet, nunca ganho" 😂',
+    '"Crobet tá pagando forte" - Chat',
+    'Aqui você perde só o tempo, não o salário 💸',
+    '"Perdi o salário no tigrinho" ❌ Jogue no Krepinho! ✅',
+    'Lembre-se: nas bets reais, a casa sempre ganha',
+    'Consciência de classe > apostas esportivas',
+    'Diferente de influencer, aqui a gente critica as bets 📢',
     'O sindicato dos apostadores fictícios te deseja boa sorte! 💼',
+    "A gente só soltou o aplicativo piloto",
+    'Financeirização da vida? Não aqui! 🚫',
+    '"Fica dizendo que o Crobet não existe" - é porque não existe mesmo! 😄',
+    'Versão beta: Feature de penhorar TV em breve™',
+    'Frederico Krepe até tocou um Coldplay 🎵',
 ];
 
 // Adicionar easter eggs ocasionalmente
@@ -263,9 +290,13 @@ setInterval(() => {
 
 // Console Easter Egg
 console.log('%c🎰 CROEBET - O Cassino da Croezinha 🎰', 'font-size: 24px; color: #ffd700; font-weight: bold;');
-console.log('%cLembre-se: Esta é uma PARÓDIA! Nenhum dinheiro real está envolvido.', 'font-size: 14px; color: #ff0000;');
-console.log('%cSe você gostou, dê uma olhada no código! 💻', 'font-size: 12px; color: #00ff00;');
-console.log('%cFeito com 💚 para a comunidade Croezinha', 'font-size: 12px; color: #aaa;');
+console.log('%c⚠️ ESTA É UMA PARÓDIA! Nenhum dinheiro real está envolvido.', 'font-size: 14px; color: #ff0000; font-weight: bold;');
+console.log('%c💬 "Crobet tá pagando bem?" - Chat da Croezinha', 'font-size: 12px; color: #aaa; font-style: italic;');
+console.log('%c💬 "Meu salário é da Croebet, nunca ganho" 😂', 'font-size: 12px; color: #aaa; font-style: italic;');
+console.log('%c📢 Uma paródia criada a partir das piadas do chat', 'font-size: 12px; color: #ffd700;');
+console.log('%c✊ Consciência de classe > Apostas esportivas', 'font-size: 12px; color: #00ff00;');
+console.log('%c🙏 Agradecimentos: Franceline e todo o chat da Croezinha', 'font-size: 12px; color: #00ccff;');
+console.log('%c💻 Código aberto no GitHub!', 'font-size: 12px; color: #00ccff;');
 
 // Atalhos do teclado (para os nerds)
 document.addEventListener('keydown', (e) => {

@@ -112,6 +112,16 @@ header .container {
     text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
 }
 
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.hero-subtitle {
+    color: #ffd700;
+    font-style: italic;
+}
+
 /* Games Section */
 .games {
     display: grid;
@@ -177,6 +187,24 @@ header .container {
     font-size: 0.9em;
     color: #aaa;
     margin-top: 5px;
+}
+
+.game-warning {
+    font-size: 0.85em;
+    color: #ffd700;
+    margin-top: 10px;
+    padding: 8px;
+    background: rgba(255, 215, 0, 0.1);
+    border-left: 3px solid #ffd700;
+    border-radius: 5px;
+}
+
+.game-joke {
+    display: block;
+    font-size: 0.8em;
+    color: #aaa;
+    margin-top: 8px;
+    font-style: italic;
 }
 
 /* Slot Machine */
@@ -466,6 +494,13 @@ footer {
 
 .footer-credits p {
     margin: 5px 0;
+}
+
+.small-disclaimer {
+    font-size: 0.9em;
+    color: #888;
+    font-style: italic;
+    margin-top: 10px;
 }
 
 /* Responsive */

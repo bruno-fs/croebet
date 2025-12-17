@@ -18,7 +18,36 @@ Uma paródia de cassino online criada para fins humorísticos, inspirada em piad
 
 ## 🎲 Sobre
 
-O **Croebet** é uma aplicação web de paródia que simula um cassino online, com o famoso **Jogo do Krepinho** - uma sátira do "jogo do tigrinho", mas com o trabalhista Frederico Krepe como mascote!
+> _"Crobet tá pagando bem?"_ - Chat da Croezinha
+>
+> _"Meu salário é da Croebet, nunca ganho"_ 😂
+
+O **Croebet** é uma aplicação web de paródia criada **a partir das piadas do chat** da Croezinha, como crítica humorística à "indústria do Loss" e à proliferação de casas de apostas no Brasil.
+
+Nascido das lives do canal, onde o chat brinca constantemente sobre "quando a Croezinha vai lançar a bet dela", este projeto transforma a piada em realidade: uma bet que NÃO existe, NÃO lucra, e NÃO prejudica ninguém.
+
+Destaque para o **Jogo do Krepinho** - uma paródia do "jogo do tigrinho", mas com o trabalhista Frederico Krepe como mascote!
+
+### 📺 Contexto e Piadas do Chat
+
+O termo "Croebet" surgiu nas transmissões ao vivo do canal **Croezinha** como uma piada recorrente e crítica satírica ao mercado de apostas brasileiro.
+
+**Piadas reais do chat que inspiraram o projeto:**
+
+- _"Crobet tá pagando bem?"_ - Pergunta recorrente no chat
+- _"Meu salário é da Croebet, nunca ganho"_ - Piada sobre apostas onde sempre se perde
+- _"Perdi o salário no tigre"_ - Referência ao jogo do tigrinho
+- _"A gente só soltou o aplicativo piloto"_ - Franceline ironizando versões beta
+- _"Penhorar TV para apostar"_ - Crítica a pessoas que penhoram bens para jogar
+- _"Acabei de ganhar R$ 50 no Crobet"_ - SuperChats fazendo piada
+- _"Fica dizendo que o Crobet não existe"_ - A Croezinha negando constantemente
+
+**Personagens mencionados:**
+
+- **Franceline**: Membra do chat conhecida por piadas elaboradas sobre o Croebet
+- **Frederico Krepe**: Trabalhista mencionado nas lives, virou mascote do "Krepinho"
+
+**Este projeto é a resposta satírica**: uma "bet" que não existe, não lucra, e não prejudica ninguém.
 
 ### ⚡ Características
 
@@ -28,6 +57,7 @@ O **Croebet** é uma aplicação web de paródia que simula um cassino online, c
 - 📱 **Responsivo**: Funciona em desktop e mobile
 - 🔒 **100% Client-Side**: Roda completamente no navegador, sem backend
 - 🚫 **Zero Dinheiro Real**: Nenhuma aposta real envolvida
+- 💬 **Easter Eggs**: Mensagens satíricas sobre a indústria do Loss
 
 ### 🎮 Como Jogar
 
@@ -95,9 +125,21 @@ Sem frameworks, sem dependências, sem complicação!
 - ❌ **NÃO** é um site de apostas real
 - ❌ **NÃO** envolve dinheiro real
 - ❌ **NÃO** deve ser usado como modelo para sites de apostas reais
+- ✅ **SIM**, é uma crítica satírica à indústria de apostas
 - ✅ **SIM**, é apenas para diversão e entretenimento
 
-### Sobre Jogos de Azar
+### Sobre a "Indústria do Loss"
+
+Este projeto é uma crítica humorística ao cenário atual de apostas no Brasil, onde:
+
+- 📊 Bilhões de reais são lucrados por casas de apostas às custas da classe trabalhadora
+- 📺 Influenciadores normalizam o vício em jogos de azar
+- 💸 A propaganda massiva de bets causa epidemia de endividamento
+- 🎭 A promessa de "dinheiro fácil" esconde a dura realidade: **a casa sempre ganha**
+
+**Consciência de classe > Apostas esportivas**
+
+### Se você precisa de ajuda
 
 Jogos de azar podem causar dependência e problemas financeiros graves. Se você ou alguém que você conhece tem problemas com jogos de azar, procure ajuda:
 
@@ -131,8 +173,6 @@ Este projeto é uma paródia e está disponível para uso livre. Use por sua con
 ## 💚 Créditos
 
 Feito com 💻 e ☕ para a comunidade **Croezinha**
-
-Nenhum Krepinho foi ferido na produção deste site.
 
 ---
 
