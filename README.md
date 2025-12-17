@@ -1,4 +1,4 @@
-# 🎰 CROEBET - Um cassino bem lofi
+# 🔮 CROEBET - Um cassino bem lofi
 
 <div align="center">
 
@@ -24,9 +24,9 @@ Uma paródia de cassino online criada para fins humorísticos, inspirada em piad
 
 O **Croebet** é uma aplicação web de paródia criada **a partir das piadas do chat** da Croezinha, como crítica humorística à "indústria do Loss" e à proliferação de casas de apostas no Brasil.
 
-Nascido das lives do canal, onde o chat brinca constantemente sobre "quando a Croezinha vai lançar a bet dela", este projeto transforma a piada em realidade: uma bet que NÃO existe, NÃO lucra, e NÃO prejudica ninguém.
+Nascido das lives do canal, onde o chat brinca constantemente sobre "quando a Croezinha vai lançar a bet dela", este projeto transforma a piada em realidade mística: uma bet que NÃO existe, NÃO lucra, e NÃO prejudica ninguém - mas tem misticismo, astrologia e muita fumaça.
 
-Destaque para o **Jogo do Krepinho** - uma paródia do "jogo do tigrinho", mas com o trabalhista Frederico Krepe como mascote!
+Destaque para o **Jogo do Krepinho** - uma paródia do "jogo do tigrinho", mas com o trabalhista Frederico Krepe como oráculo esotérico e símbolos místicos!
 
 ### 📺 Contexto e Piadas do Chat
 
@@ -51,24 +51,26 @@ O termo "Croebet" surgiu nas transmissões ao vivo do canal **Croezinha** como u
 
 ### ⚡ Características
 
-- 🎰 **Jogo do Krepinho**: Slot machine com símbolos temáticos trabalhistas
+- 🔮 **Jogo do Krepinho**: Slot machine com símbolos místicos (bola de cristal, lua, tarô, fumaça sagrada)
 - 💰 **Saldo Fictício**: Comece com R$ 1000,00 de dinheiro fake
-- 🎨 **Visual Chamativo**: Design inspirado em sites de apostas reais
+- 🎨 **Visual Místico**: Design roxo/rosa inspirado em esoterismo e sites de apostas
 - 📱 **Responsivo**: Funciona em desktop e mobile
 - 🔒 **100% Client-Side**: Roda completamente no navegador, sem backend
 - 🚫 **Zero Dinheiro Real**: Nenhuma aposta real envolvida
-- 💬 **Easter Eggs**: Mensagens satíricas sobre a indústria do Loss
+- 💨 **Tema Esotérico**: Misticismo, tabagismo e crítica social em perfeita harmonia
+- 💬 **Easter Eggs**: Mensagens satíricas místicas sobre a indústria do Loss
+- ✨ **8 Jogos Fake**: Bola de Cristal, Roleta da Lua Cheia, Baralho Cigano, Runas, Astrologia e mais!
 
-### 🎮 Como Jogar
+### 🎮 Como Consultar o Oráculo
 
 1. **Escolha sua aposta** usando os botões + e - (R$ 1 a R$ 1000)
-2. **Clique em GIRAR** ou aperte `Enter`/`Espaço`
-3. **Torça** para conseguir 3 símbolos iguais!
+2. **Clique em GIRAR** ou aperte `Enter`/`Espaço` para invocar os espíritos
+3. **Deixe as estrelas decidirem** se você ganha 3 símbolos místicos iguais!
 4. **Ganhe prêmios fictícios** baseados na combinação:
-   - 👔👔👔 (3 Krepinhos) = 10x
-   - 📊📊📊 (3 Gráficos) = 5x
-   - 💼💼💼 (3 Maletas) = 3x
-   - ⚖️⚖️⚖️ (3 Balanças) = 2x
+   - 🔮🔮🔮 (3 Bolas de Cristal) = 10x
+   - 🌙🌙🌙 (3 Luas Místicas) = 5x
+   - ✨✨✨ (3 Estrelas) = 3x
+   - 🃏🃏🃏 (3 Cartas de Tarô) = 2x
 
 ### ⌨️ Atalhos de Teclado
 
@@ -110,11 +112,13 @@ Depois acesse `http://localhost:8000` no navegador.
 ## 🛠️ Tecnologias
 
 - **HTML5** - Estrutura
-- **CSS3** - Estilização com gradientes, animações e efeitos
+- **CSS3** - Estilização com gradientes místicos roxo/rosa, animações e efeitos esotéricos
 - **JavaScript (Vanilla)** - Lógica do jogo
+- **Vite** - Build tool para assets otimizados
+- **Fontes Google**: Cinzel (títulos místicos) e Cormorant Garamond (corpo elegante)
 - **GitHub Pages** - Hospedagem gratuita
 
-Sem frameworks, sem dependências, sem complicação!
+Sem frameworks complexos, apenas magia pura!
 
 ---
 
@@ -150,12 +154,13 @@ Jogos de azar podem causar dependência e problemas financeiros graves. Se você
 
 ## 🎨 Customização
 
-Sinta-se livre para customizar a aplicação:
+Sinta-se livre para customizar a aplicação mística:
 
-- **Adicionar novos símbolos**: Edite o array `symbols` em `script.js`
+- **Adicionar novos símbolos místicos**: Edite o array `symbols` em `script.js` (🔮, 🌙, ✨, etc.)
 - **Ajustar probabilidades**: Modifique a função `getSpinResult()` em `script.js`
-- **Mudar cores**: Edite os gradientes em `styles.css`
-- **Adicionar novos jogos**: Crie novas seções no `index.html`
+- **Mudar cores**: Edite os gradientes roxo/rosa em `styles.css`
+- **Trocar fontes**: Modifique as importações do Google Fonts no CSS
+- **Adicionar novos jogos esotéricos**: Crie novas seções no `index.html`
 
 ---
 

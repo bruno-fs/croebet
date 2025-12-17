@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,14 +7,14 @@
 }
 
 body {
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
-    background: linear-gradient(135deg, #2d1b3d 0%, #1a0f2e 50%, #0f0820 100%);
-    color: #ffffff;
+    font-family: 'Cormorant Garamond', serif;
+    background: linear-gradient(135deg, #2a0a2a 0%, #1a0520 50%, #0f0315 100%);
+    color: #f0e6f0;
     min-height: 100vh;
     position: relative;
 }
 
-/* Animação de fundo lofi */
+/* Animação de fundo místico */
 body::before {
     content: '';
     position: fixed;
@@ -21,9 +23,9 @@ body::before {
     width: 100%;
     height: 100%;
     background:
-        radial-gradient(circle at 20% 50%, rgba(0, 255, 157, 0.08) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(255, 92, 141, 0.12) 0%, transparent 50%),
-        radial-gradient(circle at 40% 20%, rgba(157, 78, 221, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(255, 105, 180, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(138, 43, 226, 0.12) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(218, 112, 214, 0.08) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
 }
@@ -36,16 +38,20 @@ body::before {
     z-index: 1;
 }
 
-/* Header lofi */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
+}
+
+/* Header místico */
 header {
-    background: rgba(20, 10, 35, 0.95);
+    background: rgba(42, 10, 42, 0.95);
     backdrop-filter: blur(10px);
-    border-bottom: 3px solid #00ff9d;
+    border-bottom: 3px solid #FF69B4;
     padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 4px 20px rgba(0, 255, 157, 0.3);
+    box-shadow: 0 4px 20px rgba(255, 105, 180, 0.4);
 }
 
 header .container {
@@ -56,13 +62,13 @@ header .container {
 
 .logo h1 {
     font-size: 2.5em;
-    color: #00ff9d;
+    color: #FF69B4;
     text-shadow:
-        0 0 20px rgba(0, 255, 157, 0.8),
-        0 0 40px rgba(0, 255, 157, 0.4),
+        0 0 20px rgba(255, 105, 180, 0.8),
+        0 0 40px rgba(255, 105, 180, 0.4),
         2px 2px 4px rgba(0, 0, 0, 0.8);
     animation: shine 3s infinite;
-    letter-spacing: -1px;
+    letter-spacing: 2px;
 }
 
 @keyframes shine {
@@ -73,70 +79,71 @@ header .container {
 .tagline {
     display: block;
     font-size: 0.8em;
-    color: #ff99cc;
+    color: #dda0dd;
     margin-top: -10px;
+    font-style: italic;
 }
 
 .balance {
-    background: linear-gradient(135deg, #d6006f 0%, #ff1a8c 100%);
+    background: linear-gradient(135deg, #6b2d9e 0%, #8b1fa8 100%);
     padding: 15px 30px;
     border-radius: 12px;
-    border: 2px solid #00ff9d;
-    box-shadow: 0 4px 15px rgba(0, 255, 157, 0.4);
+    border: 2px solid #FF69B4;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.5);
 }
 
 .balance-label {
     font-size: 0.9em;
-    color: #ffffff;
+    color: #f0e6f0;
     font-weight: 500;
 }
 
 .balance-amount {
     font-size: 1.8em;
     font-weight: bold;
-    color: #00ff9d;
+    color: #FF69B4;
     margin-top: 5px;
     text-shadow:
-        0 0 15px rgba(0, 255, 157, 1),
+        0 0 15px rgba(255, 105, 180, 1),
         2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-/* Hero Section lofi */
+/* Hero Section místico */
 .hero {
     text-align: center;
     padding: 40px 20px;
     margin: 20px 0;
-    background: rgba(45, 27, 61, 0.6);
+    background: rgba(42, 10, 42, 0.6);
     border-radius: 20px;
-    border: 2px dashed rgba(0, 255, 157, 0.6);
+    border: 2px dashed rgba(255, 105, 180, 0.6);
 }
 
 .hero h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    color: #ff66b2;
+    color: #FF69B4;
     text-shadow:
-        0 0 20px rgba(255, 102, 178, 0.6),
+        0 0 20px rgba(255, 105, 180, 0.8),
         2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .hero p {
     font-size: 1.2em;
     margin: 10px 0;
-    color: #ffffff;
+    color: #f0e6f0;
 }
 
 .hero-subtitle {
-    color: #00ff9d;
+    color: #dda0dd;
     font-style: italic;
     text-shadow:
-        0 0 15px rgba(0, 255, 157, 0.8),
+        0 0 15px rgba(221, 160, 221, 0.8),
         2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .mystic-message {
     font-size: 0.95em;
-    color: #ff99cc;
+    color: #dda0dd;
     font-style: italic;
     margin: 5px 0;
 }
@@ -150,25 +157,25 @@ header .container {
 }
 
 .game-card {
-    background: rgba(45, 27, 61, 0.8);
+    background: rgba(42, 10, 42, 0.8);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 25px;
-    border: 2px solid rgba(0, 255, 157, 0.5);
+    border: 2px solid rgba(255, 105, 180, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .game-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 255, 157, 0.6);
-    border-color: #00ff9d;
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.6);
+    border-color: #FF69B4;
 }
 
 .game-card.featured {
     grid-column: 1 / -1;
-    border: 3px solid #00ff9d;
-    background: rgba(30, 15, 45, 0.9);
-    box-shadow: 0 0 30px rgba(0, 255, 157, 0.3);
+    border: 3px solid #FF69B4;
+    background: rgba(42, 10, 42, 0.9);
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.4);
 }
 
 .game-card.disabled {
@@ -188,12 +195,12 @@ header .container {
 }
 
 .hot-badge {
-    background: linear-gradient(45deg, #ff4080, #ff5c8d);
+    background: linear-gradient(45deg, #FF69B4, #ff85c1);
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 0.9em;
     animation: pulse 2s infinite;
-    border: 1px solid #00ff9d;
+    border: 1px solid #dda0dd;
 }
 
 @keyframes pulse {
@@ -213,18 +220,18 @@ header .container {
 
 .game-warning {
     font-size: 0.85em;
-    color: #00ff9d;
+    color: #dda0dd;
     margin-top: 10px;
     padding: 8px;
-    background: rgba(0, 255, 157, 0.1);
-    border-left: 3px solid #00ff9d;
+    background: rgba(221, 160, 221, 0.1);
+    border-left: 3px solid #dda0dd;
     border-radius: 5px;
 }
 
 .game-joke {
     display: block;
     font-size: 0.8em;
-    color: #ff99cc;
+    color: #dda0dd;
     margin-top: 8px;
     font-style: italic;
 }
@@ -243,17 +250,17 @@ header .container {
     gap: 15px;
     margin-bottom: 30px;
     padding: 20px;
-    background: linear-gradient(135deg, #6b2d9e 0%, #3d1160 100%);
+    background: linear-gradient(135deg, #6b2d9e 0%, #8b1fa8 100%);
     border-radius: 15px;
-    border: 3px solid #00ff9d;
-    box-shadow: 0 0 25px rgba(0, 255, 157, 0.5);
+    border: 3px solid #FF69B4;
+    box-shadow: 0 0 25px rgba(255, 105, 180, 0.5);
 }
 
 .reel {
     width: 120px;
     height: 120px;
-    background: rgba(20, 10, 35, 0.9);
-    border: 3px solid #00ff9d;
+    background: rgba(42, 10, 42, 0.9);
+    border: 3px solid #FF69B4;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -288,8 +295,8 @@ header .container {
 
 .reel.win {
     animation: win-shake 0.5s;
-    border-color: #00ff9d;
-    box-shadow: 0 0 30px #00ff9d;
+    border-color: #FF69B4;
+    box-shadow: 0 0 30px #FF69B4;
 }
 
 @keyframes win-shake {
@@ -320,18 +327,19 @@ header .container {
     width: 40px;
     height: 40px;
     font-size: 1.5em;
-    background: linear-gradient(135deg, #ff4080 0%, #ff5c8d 100%);
+    background: linear-gradient(135deg, #FF69B4 0%, #ff85c1 100%);
     color: white;
-    border: 2px solid #00ff9d;
+    border: 2px solid #dda0dd;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
 }
 
 .btn-bet-adjust:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(0, 255, 157, 0.5);
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.6);
 }
 
 .btn-bet-adjust:active {
@@ -343,24 +351,24 @@ header .container {
     padding: 10px;
     font-size: 1.2em;
     text-align: center;
-    border: 2px solid #00ff9d;
+    border: 2px solid #FF69B4;
     border-radius: 10px;
-    background: rgba(20, 10, 35, 0.9);
-    color: #00ff9d;
-    font-family: 'Comic Sans MS', cursive;
+    background: rgba(42, 10, 42, 0.9);
+    color: #FF69B4;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: bold;
-    text-shadow: 0 0 10px rgba(0, 255, 157, 0.8);
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
 }
 
-/* Spin Button lofi */
+/* Spin Button místico */
 .btn-spin {
     width: 100%;
     padding: 20px;
     font-size: 1.5em;
     font-weight: bold;
-    background: linear-gradient(135deg, #d6006f 0%, #8b1fa8 100%);
+    background: linear-gradient(135deg, #6b2d9e 0%, #8b1fa8 100%);
     color: white;
-    border: 3px solid #00ff9d;
+    border: 3px solid #FF69B4;
     border-radius: 15px;
     cursor: pointer;
     display: flex;
@@ -369,7 +377,7 @@ header .container {
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Cinzel', serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -393,7 +401,7 @@ header .container {
 
 .btn-spin:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(245, 87, 108, 0.6);
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.6);
 }
 
 .btn-spin:active {
@@ -426,16 +434,16 @@ header .container {
 }
 
 .result-message.win {
-    background: linear-gradient(135deg, #00ff9d, #00cc7a);
-    color: #000000;
+    background: linear-gradient(135deg, #FF69B4, #ff85c1);
+    color: #ffffff;
     animation: celebrate 0.5s;
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .result-message.lose {
-    background: linear-gradient(135deg, #ff1a8c, #d6006f);
-    color: #ffffff;
+    background: linear-gradient(135deg, #6b2d9e, #8b1fa8);
+    color: #f0e6f0;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -470,26 +478,26 @@ header .container {
 }
 
 .prize {
-    color: #00ff9d;
+    color: #FF69B4;
     font-weight: bold;
-    text-shadow: 0 0 8px rgba(0, 255, 157, 0.5);
+    text-shadow: 0 0 8px rgba(255, 105, 180, 0.6);
 }
 
-/* Footer lofi */
+/* Footer místico */
 footer {
-    background: rgba(15, 8, 32, 0.95);
+    background: rgba(42, 10, 42, 0.95);
     margin-top: 50px;
     padding: 30px 0;
-    border-top: 3px solid #00ff9d;
+    border-top: 3px solid #FF69B4;
 }
 
 .disclaimer {
-    background: linear-gradient(135deg, #d6006f, #6b2d9e);
+    background: linear-gradient(135deg, #6b2d9e, #8b1fa8);
     padding: 30px;
     border-radius: 15px;
     margin-bottom: 20px;
-    border: 3px solid #00ff9d;
-    box-shadow: 0 0 30px rgba(0, 255, 157, 0.5);
+    border: 3px solid #FF69B4;
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.5);
 }
 
 .disclaimer h3 {
@@ -497,8 +505,8 @@ footer {
     margin-bottom: 15px;
     text-align: center;
     animation: blink 1s infinite;
-    color: #00ff9d;
-    text-shadow: 0 0 15px rgba(0, 255, 157, 0.6);
+    color: #FF69B4;
+    text-shadow: 0 0 15px rgba(255, 105, 180, 0.6);
 }
 
 @keyframes blink {
@@ -510,7 +518,7 @@ footer {
     margin: 10px 0;
     font-size: 1.1em;
     line-height: 1.6;
-    color: #ffffff;
+    color: #f0e6f0;
 }
 
 .help-link {
@@ -520,15 +528,15 @@ footer {
 }
 
 .help-link a {
-    color: #00ff9d;
+    color: #FF69B4;
     text-decoration: underline;
     font-weight: bold;
-    text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
 }
 
 .footer-credits {
     text-align: center;
-    color: #cccccc;
+    color: #dda0dd;
     margin-top: 20px;
 }
 
@@ -538,7 +546,7 @@ footer {
 
 .small-disclaimer {
     font-size: 0.9em;
-    color: #ff99cc;
+    color: #dda0dd;
     font-style: italic;
     margin-top: 10px;
 }

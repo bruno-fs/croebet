@@ -3,15 +3,15 @@ let balance = 1000;
 let betAmount = 10;
 let isSpinning = false;
 
-// Símbolos do jogo
+// Símbolos místicos do jogo
 const symbols = [
-    '👔', // Gravata
-    '📊', // Gráfico
-    '💼', // Maleta
-    '⚖️', // Balança
-    '📋', // Contrato
-    '💰', // Dinheiro
-    '🏛️', // Tribunal
+    '🔮', // Bola de Cristal
+    '🌙', // Lua Mística
+    '✨', // Estrelas
+    '🃏', // Carta de Tarô
+    '💨', // Fumaça Sagrada
+    '🕯️', // Vela Mística
+    '⚗️', // Alquimia
 ];
 
 // Elementos DOM
@@ -133,7 +133,7 @@ async function spin() {
         const winMessages = [
             `🎉 GANHOU! +R$ ${winAmount.toFixed(2)} 🎉`,
             `💰 "Acabei de ganhar R$ ${winAmount.toFixed(2)} no Crobet!" - SuperChat`,
-            `🎊 O Krepinho te abençoou! +R$ ${winAmount.toFixed(2)}`,
+            `🎊 Benção da Crô! +R$ ${winAmount.toFixed(2)}`,
             `✨ Ganhou! "Crobet tá pagando forte" (só que não) 💸`,
             `🏆 +R$ ${winAmount.toFixed(2)}! Nas bets reais isso NÃO acontece`,
             `🔮 A bola de cristal acertou! +R$ ${winAmount.toFixed(2)} (fictícios)`,
@@ -154,8 +154,7 @@ async function spin() {
             `😅 "Perdi o salário no tigre" - mas aqui é de mentira!`,
             `🎲 A casa ganhou... ops, não tem casa aqui!`,
             `📉 Bem-vindo à indústria do Loss™`,
-            `😔 Krepe triste, Tamir boca de sacola...`,
-            `💼 Até o trabalhista perdeu essa rodada`,
+            `😔 Tamir, seu boca de sacola, Krepe ficou triste...`,
             `🔮 Os jovens místicos previram sua derrota`,
             `🔮 A bola de cristal não mente... já vai começar a derrota`,
         ];
