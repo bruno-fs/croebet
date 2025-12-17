@@ -1,4 +1,4 @@
-# 🎰 CROEBET - O Cassino da Croezinha
+# 🎰 CROEBET - Um cassino bem lofi
 
 <div align="center">
 
