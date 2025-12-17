@@ -161,7 +161,20 @@ Sinta-se livre para customizar a aplicação:
 
 ## 📝 Licença
 
-Este projeto é uma paródia e está disponível para uso livre. Use por sua conta e risco.
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+Este projeto está licenciado sob a **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Internacional**.
+
+**Isso significa que você pode:**
+- ✅ Compartilhar e redistribuir o material
+- ✅ Adaptar, remixar e criar a partir do material
+
+**Desde que:**
+- 📝 Dê o crédito apropriado (na verdade não faço questão do crédito, mas os próximos items são importantes)
+- 🚫 **NÃO use para fins comerciais**
+- 🔄 Distribua suas contribuições sob a mesma licença
+
+Para mais detalhes, consulte o arquivo [LICENSE](LICENSE) ou visite [creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 **Não nos responsabilizamos por:**
 - Uso inadequado desta aplicação
