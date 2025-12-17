@@ -136,6 +136,7 @@ async function spin() {
             `🎊 O Krepinho te abençoou! +R$ ${winAmount.toFixed(2)}`,
             `✨ Ganhou! "Crobet tá pagando forte" (só que não) 💸`,
             `🏆 +R$ ${winAmount.toFixed(2)}! Nas bets reais isso NÃO acontece`,
+            `🔮 A bola de cristal acertou! +R$ ${winAmount.toFixed(2)} (fictícios)`,
         ];
         resultMessage.textContent = winMessages[Math.floor(Math.random() * winMessages.length)];
         resultMessage.className = 'result-message win';
@@ -152,9 +153,11 @@ async function spin() {
             `❌ Loss! (Pelo menos aqui não dói no bolso)`,
             `😅 "Perdi o salário no tigre" - mas aqui é de mentira!`,
             `🎲 A casa ganhou... ops, não tem casa aqui!`,
-            `📉 Bem-vindo à indústria do Loss™ (versão paródia)`,
-            `😔 Krepe triste, Tamir boca de sacola... todos perderam`,
+            `📉 Bem-vindo à indústria do Loss™`,
+            `😔 Krepe triste, Tamir boca de sacola...`,
             `💼 Até o trabalhista perdeu essa rodada`,
+            `🔮 Os jovens místicos previram sua derrota`,
+            `🔮 A bola de cristal não mente... já vai começar a derrota`,
         ];
         resultMessage.textContent = loseMessages[Math.floor(Math.random() * loseMessages.length)];
         resultMessage.className = 'result-message lose';
@@ -271,6 +274,8 @@ const easterEggMessages = [
     '"Fica dizendo que o Crobet não existe" - é porque não existe mesmo! 😄',
     'Versão beta: Feature de penhorar TV em breve™',
     'Frederico Krepe até tocou um Coldplay 🎵',
+    '🔮 Jovens místicos consultaram a bola: aposta responsável não existe',
+    'já vai começar... a consciência de classe 💚',
 ];
 
 // Adicionar easter eggs ocasionalmente

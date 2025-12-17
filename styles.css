@@ -5,14 +5,14 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #0a0e27 0%, #1a1a2e 50%, #16213e 100%);
-    color: #fff;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    background: linear-gradient(135deg, #2d1b3d 0%, #1a0f2e 50%, #0f0820 100%);
+    color: #ffffff;
     min-height: 100vh;
     position: relative;
 }
 
-/* Animação de fundo */
+/* Animação de fundo lofi */
 body::before {
     content: '';
     position: fixed;
@@ -21,9 +21,9 @@ body::before {
     width: 100%;
     height: 100%;
     background:
-        radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 40% 20%, rgba(0, 255, 255, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(0, 255, 157, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 92, 141, 0.12) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(157, 78, 221, 0.1) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
 }
@@ -36,16 +36,16 @@ body::before {
     z-index: 1;
 }
 
-/* Header */
+/* Header lofi */
 header {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(20, 10, 35, 0.95);
     backdrop-filter: blur(10px);
-    border-bottom: 2px solid #ffd700;
+    border-bottom: 3px solid #00ff9d;
     padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 255, 157, 0.3);
 }
 
 header .container {
@@ -56,12 +56,13 @@ header .container {
 
 .logo h1 {
     font-size: 2.5em;
-    background: linear-gradient(45deg, #ffd700, #ffed4e, #ffd700);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+    color: #00ff9d;
+    text-shadow:
+        0 0 20px rgba(0, 255, 157, 0.8),
+        0 0 40px rgba(0, 255, 157, 0.4),
+        2px 2px 4px rgba(0, 0, 0, 0.8);
     animation: shine 3s infinite;
+    letter-spacing: -1px;
 }
 
 @keyframes shine {
@@ -72,54 +73,72 @@ header .container {
 .tagline {
     display: block;
     font-size: 0.8em;
-    color: #aaa;
+    color: #ff99cc;
     margin-top: -10px;
 }
 
 .balance {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #d6006f 0%, #ff1a8c 100%);
     padding: 15px 30px;
     border-radius: 12px;
-    border: 2px solid #ffd700;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    border: 2px solid #00ff9d;
+    box-shadow: 0 4px 15px rgba(0, 255, 157, 0.4);
 }
 
 .balance-label {
     font-size: 0.9em;
-    color: #aaa;
+    color: #ffffff;
+    font-weight: 500;
 }
 
 .balance-amount {
     font-size: 1.8em;
     font-weight: bold;
-    color: #ffd700;
+    color: #00ff9d;
     margin-top: 5px;
+    text-shadow:
+        0 0 15px rgba(0, 255, 157, 1),
+        2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-/* Hero Section */
+/* Hero Section lofi */
 .hero {
     text-align: center;
     padding: 40px 20px;
     margin: 20px 0;
-    background: linear-gradient(135deg, rgba(255, 0, 255, 0.1) 0%, rgba(0, 255, 255, 0.1) 100%);
+    background: rgba(45, 27, 61, 0.6);
     border-radius: 20px;
-    border: 1px solid rgba(255, 215, 0, 0.3);
+    border: 2px dashed rgba(0, 255, 157, 0.6);
 }
 
 .hero h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    color: #ff66b2;
+    text-shadow:
+        0 0 20px rgba(255, 102, 178, 0.6),
+        2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .hero p {
     font-size: 1.2em;
     margin: 10px 0;
+    color: #ffffff;
 }
 
 .hero-subtitle {
-    color: #ffd700;
+    color: #00ff9d;
     font-style: italic;
+    text-shadow:
+        0 0 15px rgba(0, 255, 157, 0.8),
+        2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.mystic-message {
+    font-size: 0.95em;
+    color: #ff99cc;
+    font-style: italic;
+    margin: 5px 0;
 }
 
 /* Games Section */
@@ -131,23 +150,25 @@ header .container {
 }
 
 .game-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(45, 27, 61, 0.8);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 25px;
-    border: 2px solid rgba(255, 215, 0, 0.3);
+    border: 2px solid rgba(0, 255, 157, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .game-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 255, 157, 0.6);
+    border-color: #00ff9d;
 }
 
 .game-card.featured {
     grid-column: 1 / -1;
-    border: 3px solid #ffd700;
-    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 0, 255, 0.1) 100%);
+    border: 3px solid #00ff9d;
+    background: rgba(30, 15, 45, 0.9);
+    box-shadow: 0 0 30px rgba(0, 255, 157, 0.3);
 }
 
 .game-card.disabled {
@@ -167,11 +188,12 @@ header .container {
 }
 
 .hot-badge {
-    background: linear-gradient(45deg, #ff0000, #ff6600);
+    background: linear-gradient(45deg, #ff4080, #ff5c8d);
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 0.9em;
     animation: pulse 2s infinite;
+    border: 1px solid #00ff9d;
 }
 
 @keyframes pulse {
@@ -185,24 +207,24 @@ header .container {
 
 .game-hint {
     font-size: 0.9em;
-    color: #aaa;
+    color: #cccccc;
     margin-top: 5px;
 }
 
 .game-warning {
     font-size: 0.85em;
-    color: #ffd700;
+    color: #00ff9d;
     margin-top: 10px;
     padding: 8px;
-    background: rgba(255, 215, 0, 0.1);
-    border-left: 3px solid #ffd700;
+    background: rgba(0, 255, 157, 0.1);
+    border-left: 3px solid #00ff9d;
     border-radius: 5px;
 }
 
 .game-joke {
     display: block;
     font-size: 0.8em;
-    color: #aaa;
+    color: #ff99cc;
     margin-top: 8px;
     font-style: italic;
 }
@@ -221,16 +243,17 @@ header .container {
     gap: 15px;
     margin-bottom: 30px;
     padding: 20px;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    background: linear-gradient(135deg, #6b2d9e 0%, #3d1160 100%);
     border-radius: 15px;
-    border: 3px solid #ffd700;
+    border: 3px solid #00ff9d;
+    box-shadow: 0 0 25px rgba(0, 255, 157, 0.5);
 }
 
 .reel {
     width: 120px;
     height: 120px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 3px solid #ffd700;
+    background: rgba(20, 10, 35, 0.9);
+    border: 3px solid #00ff9d;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -238,6 +261,7 @@ header .container {
     font-size: 4em;
     position: relative;
     overflow: hidden;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .reel.spinning {
@@ -264,8 +288,8 @@ header .container {
 
 .reel.win {
     animation: win-shake 0.5s;
-    border-color: #00ff00;
-    box-shadow: 0 0 30px #00ff00;
+    border-color: #00ff9d;
+    box-shadow: 0 0 30px #00ff9d;
 }
 
 @keyframes win-shake {
@@ -296,16 +320,18 @@ header .container {
     width: 40px;
     height: 40px;
     font-size: 1.5em;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ff4080 0%, #ff5c8d 100%);
     color: white;
-    border: none;
+    border: 2px solid #00ff9d;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s;
+    font-family: 'Comic Sans MS', cursive;
 }
 
 .btn-bet-adjust:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 255, 157, 0.5);
 }
 
 .btn-bet-adjust:active {
@@ -317,21 +343,24 @@ header .container {
     padding: 10px;
     font-size: 1.2em;
     text-align: center;
-    border: 2px solid #ffd700;
+    border: 2px solid #00ff9d;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
+    background: rgba(20, 10, 35, 0.9);
+    color: #00ff9d;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 255, 157, 0.8);
 }
 
-/* Spin Button */
+/* Spin Button lofi */
 .btn-spin {
     width: 100%;
     padding: 20px;
     font-size: 1.5em;
     font-weight: bold;
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #d6006f 0%, #8b1fa8 100%);
     color: white;
-    border: 3px solid #ffd700;
+    border: 3px solid #00ff9d;
     border-radius: 15px;
     cursor: pointer;
     display: flex;
@@ -340,6 +369,8 @@ header .container {
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
+    font-family: 'Comic Sans MS', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .btn-spin::before {
@@ -395,14 +426,18 @@ header .container {
 }
 
 .result-message.win {
-    background: linear-gradient(135deg, #00ff00, #00cc00);
-    color: #000;
+    background: linear-gradient(135deg, #00ff9d, #00cc7a);
+    color: #000000;
     animation: celebrate 0.5s;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .result-message.lose {
-    background: linear-gradient(135deg, #ff0000, #cc0000);
-    color: #fff;
+    background: linear-gradient(135deg, #ff1a8c, #d6006f);
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes celebrate {
@@ -435,25 +470,26 @@ header .container {
 }
 
 .prize {
-    color: #ffd700;
+    color: #00ff9d;
     font-weight: bold;
+    text-shadow: 0 0 8px rgba(0, 255, 157, 0.5);
 }
 
-/* Footer */
+/* Footer lofi */
 footer {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(15, 8, 32, 0.95);
     margin-top: 50px;
     padding: 30px 0;
-    border-top: 3px solid #ff0000;
+    border-top: 3px solid #00ff9d;
 }
 
 .disclaimer {
-    background: linear-gradient(135deg, #ff0000, #cc0000);
+    background: linear-gradient(135deg, #d6006f, #6b2d9e);
     padding: 30px;
     border-radius: 15px;
     margin-bottom: 20px;
-    border: 3px solid #ffff00;
-    box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+    border: 3px solid #00ff9d;
+    box-shadow: 0 0 30px rgba(0, 255, 157, 0.5);
 }
 
 .disclaimer h3 {
@@ -461,17 +497,20 @@ footer {
     margin-bottom: 15px;
     text-align: center;
     animation: blink 1s infinite;
+    color: #00ff9d;
+    text-shadow: 0 0 15px rgba(0, 255, 157, 0.6);
 }
 
 @keyframes blink {
     0%, 50%, 100% { opacity: 1; }
-    25%, 75% { opacity: 0.7; }
+    25%, 75% { opacity: 0.8; }
 }
 
 .disclaimer p {
     margin: 10px 0;
     font-size: 1.1em;
     line-height: 1.6;
+    color: #ffffff;
 }
 
 .help-link {
@@ -481,14 +520,15 @@ footer {
 }
 
 .help-link a {
-    color: #ffff00;
+    color: #00ff9d;
     text-decoration: underline;
     font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
 }
 
 .footer-credits {
     text-align: center;
-    color: #aaa;
+    color: #cccccc;
     margin-top: 20px;
 }
 
@@ -498,7 +538,7 @@ footer {
 
 .small-disclaimer {
     font-size: 0.9em;
-    color: #888;
+    color: #ff99cc;
     font-style: italic;
     margin-top: 10px;
 }
