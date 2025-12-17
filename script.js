@@ -137,6 +137,7 @@ async function spin() {
             `✨ Ganhou! "Crobet tá pagando forte" (só que não) 💸`,
             `🏆 +R$ ${winAmount.toFixed(2)}! Nas bets reais isso NÃO acontece`,
             `🔮 A bola de cristal acertou! +R$ ${winAmount.toFixed(2)} (fictícios)`,
+            `🎶 Krepe celebra ao som de Coldplay! +R$ ${winAmount.toFixed(2)} 🔮`,
         ];
         resultMessage.textContent = winMessages[Math.floor(Math.random() * winMessages.length)];
         resultMessage.className = 'result-message win';
@@ -157,6 +158,7 @@ async function spin() {
             `😔 Tamir, seu boca de sacola, Krepe ficou triste...`,
             `🔮 Os jovens místicos previram sua derrota`,
             `🔮 A bola de cristal não mente... já vai começar a derrota`,
+            `🎵 Krepe ouve "Fix You" e reflete sobre a derrota mística...`,
         ];
         resultMessage.textContent = loseMessages[Math.floor(Math.random() * loseMessages.length)];
         resultMessage.className = 'result-message lose';
@@ -272,7 +274,11 @@ const easterEggMessages = [
     'Financeirização da vida? Não aqui! 🚫',
     '"Fica dizendo que o Crobet não existe" - é porque não existe mesmo! 😄',
     'Versão beta: Feature de penhorar TV em breve™',
-    'Frederico Krepe até tocou um Coldplay 🎵',
+    '🎵 Krepe medita ao som de "Yellow" - a cor mística do Coldplay 🌙',
+    '🔮 A bola de cristal toca "Fix You" - Krepe sabe que você precisa',
+    '✨ Krepe invoca "Viva la Vida" durante seus rituais trabalhistas',
+    '🌟 "The Scientist" toca enquanto Krepe estuda a reforma da previdência',
+    '💨 Fumaça sagrada + "Clocks" do Coldplay = ritual perfeito segundo Krepe',
     '🔮 Jovens místicos consultaram a bola: aposta responsável não existe',
     'já vai começar... a consciência de classe 💚',
 ];
