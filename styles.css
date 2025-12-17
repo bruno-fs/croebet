@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1a2e 50%, #16213e 100%);
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Animação de fundo */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(0, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #ffd700;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    background: linear-gradient(45deg, #ffd700, #ffed4e, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0%, 100% { filter: brightness(1); }
+    50% { filter: brightness(1.3); }
+}
+
+.tagline {
+    display: block;
+    font-size: 0.8em;
+    color: #aaa;
+    margin-top: -10px;
+}
+
+.balance {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 15px 30px;
+    border-radius: 12px;
+    border: 2px solid #ffd700;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.balance-label {
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.balance-amount {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffd700;
+    margin-top: 5px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 20px 0;
+    background: linear-gradient(135deg, rgba(255, 0, 255, 0.1) 0%, rgba(0, 255, 255, 0.1) 100%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Games Section */
+.games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.game-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+}
+
+.game-card.featured {
+    grid-column: 1 / -1;
+    border: 3px solid #ffd700;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 0, 255, 0.1) 100%);
+}
+
+.game-card.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.game-header h3 {
+    font-size: 1.8em;
+}
+
+.hot-badge {
+    background: linear-gradient(45deg, #ff0000, #ff6600);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.game-description {
+    margin-bottom: 20px;
+}
+
+.game-hint {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+/* Slot Machine */
+.slot-machine {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 0;
+}
+
+.slot-display {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-radius: 15px;
+    border: 3px solid #ffd700;
+}
+
+.reel {
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 3px solid #ffd700;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    position: relative;
+    overflow: hidden;
+}
+
+.reel.spinning {
+    animation: spin 0.1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+.reel.spinning .symbol {
+    animation: blur-spin 0.5s linear infinite;
+}
+
+@keyframes blur-spin {
+    0%, 100% { filter: blur(0px); }
+    50% { filter: blur(5px); }
+}
+
+.symbol {
+    transition: transform 0.3s;
+}
+
+.reel.win {
+    animation: win-shake 0.5s;
+    border-color: #00ff00;
+    box-shadow: 0 0 30px #00ff00;
+}
+
+@keyframes win-shake {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg) scale(1.1); }
+    75% { transform: rotate(5deg) scale(1.1); }
+}
+
+/* Bet Controls */
+.bet-controls {
+    margin-bottom: 20px;
+}
+
+.bet-controls label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.bet-input-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-bet-adjust {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-bet-adjust:hover {
+    transform: scale(1.1);
+}
+
+.btn-bet-adjust:active {
+    transform: scale(0.95);
+}
+
+#betAmount {
+    width: 120px;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* Spin Button */
+.btn-spin {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    border: 3px solid #ffd700;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-spin::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn-spin:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-spin:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(245, 87, 108, 0.6);
+}
+
+.btn-spin:active {
+    transform: scale(0.98);
+}
+
+.btn-spin:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: scale(1);
+}
+
+.btn-text, .btn-price {
+    position: relative;
+    z-index: 1;
+}
+
+/* Result Message */
+.result-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-message.win {
+    background: linear-gradient(135deg, #00ff00, #00cc00);
+    color: #000;
+    animation: celebrate 0.5s;
+}
+
+.result-message.lose {
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+    color: #fff;
+}
+
+@keyframes celebrate {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.1) rotate(-2deg); }
+    75% { transform: scale(1.1) rotate(2deg); }
+}
+
+/* Paytable */
+.paytable {
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.paytable h4 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.paytable-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+}
+
+.prize {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 50px;
+    padding: 30px 0;
+    border-top: 3px solid #ff0000;
+}
+
+.disclaimer {
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 3px solid #ffff00;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+}
+
+.disclaimer h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: center;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0.7; }
+}
+
+.disclaimer p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.help-link {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.help-link a {
+    color: #ffff00;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.footer-credits {
+    text-align: center;
+    color: #aaa;
+    margin-top: 20px;
+}
+
+.footer-credits p {
+    margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 1.8em;
+    }
+
+    .balance {
+        padding: 10px 15px;
+    }
+
+    .balance-amount {
+        font-size: 1.3em;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .slot-display {
+        gap: 10px;
+    }
+
+    .reel {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5em;
+    }
+
+    .btn-spin {
+        font-size: 1.2em;
+    }
+}

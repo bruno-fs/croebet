@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CROEBET - O Melhor Cassino da Croezinha 🎰</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>💰 CROEBET</h1>
+                <span class="tagline">A Casa da Croezinha</span>
+            </div>
+            <div class="balance">
+                <div class="balance-label">Saldo Fictício:</div>
+                <div class="balance-amount" id="balance">R$ 1000,00</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>🎮 Bem-vindo ao Croebet!</h2>
+            <p>O cassino mais confiável* da comunidade!</p>
+            <small>*Não é confiável porque não existe</small>
+        </section>
+
+        <section class="games">
+            <div class="game-card featured">
+                <div class="game-header">
+                    <h3>🎰 JOGO DO KREPINHO</h3>
+                    <span class="hot-badge">🔥 QUENTE</span>
+                </div>
+                <div class="game-description">
+                    <p>O lendário trabalhista Frederico Krepe chegou para multiplicar seus ganhos!</p>
+                    <p class="game-hint">Combine 3 Krepinhos e ganhe prêmios incríveis*</p>
+                </div>
+
+                <div class="slot-machine">
+                    <div class="slot-display">
+                        <div class="reel" id="reel1">
+                            <div class="symbol">👔</div>
+                        </div>
+                        <div class="reel" id="reel2">
+                            <div class="symbol">👔</div>
+                        </div>
+                        <div class="reel" id="reel3">
+                            <div class="symbol">👔</div>
+                        </div>
+                    </div>
+
+                    <div class="bet-controls">
+                        <label for="betAmount">Valor da Aposta:</label>
+                        <div class="bet-input-group">
+                            <button class="btn-bet-adjust" id="decreaseBet">-</button>
+                            <input type="number" id="betAmount" value="10" min="1" max="1000" step="10">
+                            <button class="btn-bet-adjust" id="increaseBet">+</button>
+                        </div>
+                    </div>
+
+                    <button class="btn-spin" id="spinBtn">
+                        <span class="btn-text">GIRAR</span>
+                        <span class="btn-price">R$ <span id="spinPrice">10</span></span>
+                    </button>
+
+                    <div class="result-message" id="resultMessage"></div>
+                </div>
+
+                <div class="paytable">
+                    <h4>💎 Tabela de Prêmios</h4>
+                    <div class="paytable-row">
+                        <span>👔👔👔 (3 Krepinhos)</span>
+                        <span class="prize">10x</span>
+                    </div>
+                    <div class="paytable-row">
+                        <span>📊📊📊 (3 Gráficos)</span>
+                        <span class="prize">5x</span>
+                    </div>
+                    <div class="paytable-row">
+                        <span>💼💼💼 (3 Maletas)</span>
+                        <span class="prize">3x</span>
+                    </div>
+                    <div class="paytable-row">
+                        <span>⚖️⚖️⚖️ (3 Balanças)</span>
+                        <span class="prize">2x</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card disabled">
+                <h3>🐯 Jogo do Tigrinho</h3>
+                <p>Em breve... ou não 🤷</p>
+            </div>
+
+            <div class="game-card disabled">
+                <h3>🍀 Mines da Sorte</h3>
+                <p>Em breve... ou não 🤷</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="disclaimer">
+            <h3>⚠️ AVISO IMPORTANTE - LEIA COM ATENÇÃO ⚠️</h3>
+            <p><strong>ESTA É UMA APLICAÇÃO DE PARÓDIA/SÁTIRA!</strong></p>
+            <p>O "Croebet" NÃO é um site de apostas real. Nenhum dinheiro real está envolvido.</p>
+            <p>Esta aplicação foi criada apenas para fins humorísticos e de entretenimento, inspirada em piadas da comunidade.</p>
+            <p>Não incentivamos jogos de azar. Se você tem problemas com jogos de azar, procure ajuda profissional.</p>
+            <p class="help-link">🆘 Ajuda para jogadores compulsivos: <a href="https://www.jogadoresanonimos.com.br/" target="_blank">www.jogadoresanonimos.com.br</a></p>
+        </div>
+        <div class="footer-credits">
+            <p>Uma paródia da comunidade Croezinha 💚</p>
+            <p>Feito com 💻 e ☕ | Nenhum Krepinho foi ferido na produção deste site</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
