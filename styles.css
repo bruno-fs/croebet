@@ -12,6 +12,7 @@ body {
     color: #f0e6f0;
     min-height: 100vh;
     position: relative;
+    font-size: 18px;
 }
 
 /* Animação de fundo místico */
@@ -61,7 +62,7 @@ header .container {
 }
 
 .logo h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     color: #FF69B4;
     text-shadow:
         0 0 20px rgba(255, 105, 180, 0.8),
@@ -78,7 +79,7 @@ header .container {
 
 .tagline {
     display: block;
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: #dda0dd;
     margin-top: -10px;
     font-style: italic;
@@ -93,13 +94,13 @@ header .container {
 }
 
 .balance-label {
-    font-size: 0.9em;
+    font-size: 1em;
     color: #f0e6f0;
     font-weight: 500;
 }
 
 .balance-amount {
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: bold;
     color: #FF69B4;
     margin-top: 5px;
@@ -119,7 +120,7 @@ header .container {
 }
 
 .hero h2 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin-bottom: 10px;
     color: #FF69B4;
     text-shadow:
@@ -128,7 +129,7 @@ header .container {
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin: 10px 0;
     color: #f0e6f0;
 }
@@ -142,7 +143,7 @@ header .container {
 }
 
 .mystic-message {
-    font-size: 0.95em;
+    font-size: 1.1em;
     color: #dda0dd;
     font-style: italic;
     margin: 5px 0;
@@ -191,7 +192,7 @@ header .container {
 }
 
 .game-header h3 {
-    font-size: 1.8em;
+    font-size: 2em;
 }
 
 .hot-badge {
@@ -210,16 +211,17 @@ header .container {
 
 .game-description {
     margin-bottom: 20px;
+    font-size: 1.05em;
 }
 
 .game-hint {
-    font-size: 0.9em;
+    font-size: 1em;
     color: #cccccc;
     margin-top: 5px;
 }
 
 .game-warning {
-    font-size: 0.85em;
+    font-size: 0.95em;
     color: #dda0dd;
     margin-top: 10px;
     padding: 8px;
@@ -230,7 +232,7 @@ header .container {
 
 .game-joke {
     display: block;
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: #dda0dd;
     margin-top: 8px;
     font-style: italic;
@@ -465,7 +467,7 @@ header .container {
 .paytable h4 {
     margin-bottom: 15px;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .paytable-row {
@@ -475,6 +477,7 @@ header .container {
     margin: 5px 0;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 5px;
+    font-size: 1.05em;
 }
 
 .prize {
@@ -501,7 +504,7 @@ footer {
 }
 
 .disclaimer h3 {
-    font-size: 1.8em;
+    font-size: 2em;
     margin-bottom: 15px;
     text-align: center;
     animation: blink 1s infinite;
@@ -516,7 +519,7 @@ footer {
 
 .disclaimer p {
     margin: 10px 0;
-    font-size: 1.1em;
+    font-size: 1.15em;
     line-height: 1.6;
     color: #f0e6f0;
 }
@@ -538,6 +541,7 @@ footer {
     text-align: center;
     color: #dda0dd;
     margin-top: 20px;
+    font-size: 1.05em;
 }
 
 .footer-credits p {
@@ -545,7 +549,7 @@ footer {
 }
 
 .small-disclaimer {
-    font-size: 0.9em;
+    font-size: 1em;
     color: #dda0dd;
     font-style: italic;
     margin-top: 10px;
