@@ -17,10 +17,10 @@ npm-debug.log*
 .env
 .env.local
 
-# Optional: Node modules if you decide to add build tools later
+# Build tools
 node_modules/
 dist/
 
-# Optional: Package manager files (if not needed)
-package-lock.json
+# Package manager files
 yarn.lock
+pnpm-lock.yaml
